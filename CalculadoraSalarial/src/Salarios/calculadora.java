@@ -32,7 +32,7 @@ public class calculadora {
 		int HR = 0;
 		int INSS = 0;
 		int INSS2 = 0;
-		float Sal_Brut= 0;
+		float Sal_Brut=0;
 		float Sal_Liq= 0;
 		float Cal_Sal= 0;
 
