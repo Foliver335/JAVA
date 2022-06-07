@@ -28,20 +28,20 @@ public class calculadora {
 		Scanner entrada = new Scanner(System.in);
 		Scanner inputNumScanner = new Scanner(System.in);
 		
-		float VaLH= 0;
-		int HR = 0;
+		float valorHora= 0f;
+		int horaTrabalhada = 0;
 		int INSS = 0;
 		int INSS2 = 0;
-		float Sal_Brut=0;
-		float Sal_Liq= 0;
-		float Cal_Sal= 0;
+		float salarioBruto=0f;
+		float salarioLiquido= 0f;
+		float calculoSalarial= 0f;
 
 		System.out.print("Digite O valor do salário/ hora:R$");
 		
-		VaLH = inputNumScanner.nextFloat();
+		valorHora = inputNumScanner.nextFloat();
 		
 		System.out.print("Digite O número de horas trabalhadas no mês:");
-		HR= inputNumScanner.nextInt();
+		horaTrabalhada= inputNumScanner.nextInt();
 		
 		System.out.print("Digite O percentual de desconto do INSS :");
 		INSS = inputNumScanner.nextInt();
@@ -51,13 +51,13 @@ public class calculadora {
        
        System.out.println("A porcentagem é = " + INSS2 + " %");
 		
-		Sal_Brut = VaLH*HR;
-		Cal_Sal = (Sal_Brut)/(INSS);
-		Sal_Liq = (Sal_Brut)-(Sal_Brut)/(INSS);
+		salarioBruto = valorHora*horaTrabalhada;
+		calculoSalarial = (salarioBruto)/(INSS);
+		salarioLiquido = (salarioBruto)-(salarioBruto)/(INSS);
 		
-		System.out.printf("Seu salário bruto é:%f\n", Sal_Brut );
+		System.out.printf("Seu salário bruto é:%f\n", salarioBruto );
 
-		out.printf("Seu salário liquido é: %f\n", Sal_Liq );
+		out.printf("Seu salário liquido é: %f\n", salarioLiquido );
 
 
 	
