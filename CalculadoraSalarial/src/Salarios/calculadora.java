@@ -11,7 +11,7 @@ líquido de um empregado. Os dados fornecidos são:
 
 - O número de horas trabalhadas no mês
 
-- O percentual de desconto do INSS */
+- O percentual de desconto do valorINSS */
 
 
 
@@ -30,8 +30,8 @@ public class calculadora {
 		
 		float valorHora= 0f;
 		int horaTrabalhada = 0;
-		int INSS = 0;
-		int INSS2 = 0;
+		int valorINSS = 0;
+		int valorvalorINSS2 = 0;
 		float salarioBruto=0f;
 		float salarioLiquido= 0f;
 		float calculoSalarial= 0f;
@@ -43,17 +43,17 @@ public class calculadora {
 		System.out.print("Digite O número de horas trabalhadas no mês:");
 		horaTrabalhada= inputNumScanner.nextInt();
 		
-		System.out.print("Digite O percentual de desconto do INSS :");
-		INSS = inputNumScanner.nextInt();
+		System.out.print("Digite O percentual de desconto do valorINSS :");
+		valorINSS = inputNumScanner.nextInt();
 		
-		INSS2 = (INSS* 100/ 100);
+		valorvalorINSS2 = (valorINSS* 100/ 100);
        
        
-       System.out.println("A porcentagem é = " + INSS2 + " %");
+       System.out.println("A porcentagem é = " + valorvalorINSS2 + " %");
 		
 		salarioBruto = valorHora*horaTrabalhada;
-		calculoSalarial = (salarioBruto)/(INSS);
-		salarioLiquido = (salarioBruto)-(salarioBruto)/(INSS);
+		calculoSalarial = (salarioBruto)/(valorINSS);
+		salarioLiquido = (salarioBruto)-(salarioBruto)/(valorINSS);
 		
 		System.out.printf("Seu salário bruto é:%f\n", salarioBruto );
 
